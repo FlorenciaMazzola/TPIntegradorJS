@@ -5,6 +5,9 @@ function calcTotal () {
     categoria = parseInt(categoria);
     valor =200;
     total = 0;
+    if(cantidad <=0){
+        alert('Debe ingresar una cantidad mayor a 0');
+    }
     if (categoria ==1) {
         total = cantidad * (valor -(valor * 0.8));
     } else if (categoria ==2){
