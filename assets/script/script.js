@@ -7,6 +7,8 @@ function calcTotal () {
     total = 0;
     if(cantidad <=0){
         alert('Debe ingresar una cantidad mayor a 0');
+        document.getElementById('cantTotal').innerHTML = "Total a Pagar: $ ";
+        return;
     }
     if (categoria ==1) {
         total = cantidad * (valor -(valor * 0.8));
